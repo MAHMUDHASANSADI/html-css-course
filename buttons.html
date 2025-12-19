@@ -12,13 +12,18 @@
         width: 105px;
         cursor: pointer;
         margin-right: 5px;
+        transition: opacity 0.15s;
     }
     .sub-btn:hover{
-        background-color: rgb(173, 84, 84)
+        /* background-color: rgb(173, 84, 84) */
+        opacity: 0.8;
+    }
+    .sub-btn:active{
+        opacity: 0.4;
     }
     .join-btn{
         background-color: white;
-        color: rgb(46, 132, 245);;
+        color: rgb(46, 132, 245);
         border-color: rgb(46, 132, 245);
         border-style: solid;
         height: 36px;
@@ -26,10 +31,15 @@
         cursor: pointer;
         margin-right: 5px;
         border-radius: 3px;
+        transition: background-color 0.15s;
     }
     .join-btn:hover{
-        background-color: blue;
-        color: aliceblue;
+        background-color: rgb(46, 132, 245);
+        color: white;
+    }
+    .join-btn:active{
+        /* background-color: blue; */
+        opacity: 0.6;
     }
     .tweet-btn{
         background-color: rgb(73, 142, 240);
@@ -38,8 +48,9 @@
         border-radius: 20px;
         height: 36px;
         width: 70px;
+        font-weight: bolder;
     }
     .tweet-btn:hover{
-        box-shadow: 2px 2px 2px rgb(141, 156, 172);
+        box-shadow: -0.2px 2px 2px 2px rgb(141, 156, 172);
     }
 </style>
